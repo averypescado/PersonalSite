@@ -19,7 +19,6 @@ export default function TileOneProject() {
         />
       </div>
       <div className={styles.impact}>Automatic picture in picture launched in July 2024 in partnership with the Chrome team. It has millions of daily users, and won an internal award for being one of the most impactful projects across Google Cloud</div>
-      <Quotes />
 
       <div className={styles.process}>
         <div className={styles.section}>Process</div>
