@@ -20,9 +20,9 @@ export default function AiCards() {
     ]
   };
 
-  const formatValue = (value: any) => {
+  const formatValue = (value: unknown) => {
     if (value === null) return <span className={styles.jsonNull}>null</span>;
-    if (typeof value === 'string') return <span className={styles.jsonString}>"{value}"</span>;
+    if (typeof value === 'string') return <span className={styles.jsonString}>&apos;{value}&apos;</span>;
     if (typeof value === 'number') return <span className={styles.jsonNumber}>{value}</span>;
     if (typeof value === 'boolean') return <span className={styles.jsonBoolean}>{value.toString()}</span>;
     return JSON.stringify(value);
