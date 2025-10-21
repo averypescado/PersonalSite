@@ -1,5 +1,5 @@
 import shared from "../Tiles.module.css"
-import individual from "./Tiletwo.module.css"
+import individual from "./TileTwo.module.css"
 import AiCards from "../../Aicards/Aicards"
 import Link from "next/link"
 export default function TileTwo() {

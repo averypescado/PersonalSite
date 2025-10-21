@@ -1,7 +1,7 @@
 "use client"
 
 import shared from "../Tiles.module.css"
-import individual from "./Tileone.module.css"
+import individual from "./TileOne.module.css"
 import Image from "next/image"
 import { useState } from "react"
 import Link from "next/link"
