@@ -102,7 +102,7 @@ export default function Informedk12Project() {
       </div>
 
       <p>
-      This greatly impacted district's comfort operating InformedK12. I left shortly after this launched but the navigation has remained unchanged since then.      </p>
+      This greatly impacted district&apos;s comfort operating InformedK12. I left shortly after this launched but the navigation has remained unchanged since then.      </p>
     </div>
       <Quotes
       items={[

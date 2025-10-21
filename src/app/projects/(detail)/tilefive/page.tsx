@@ -29,7 +29,7 @@ export default function TileFiveProject() {
         </p>
         <div className={styles.section}>Developing a new tool at my disposal</div>
           <p>
-            Since making this first extension, making chrome extensions has been a tool that I've come back to many times. Ive made extensions to add ui elements to Meet and calendar. Even if its just creating an entry point and seeing how it feels seeing it over and over all day as I do my work, it has proven to be an extremely helpful tool and skill to have.
+            Since making this first extension, making chrome extensions has been a tool that I&apos;ve come back to many times. I&apos;ve made extensions to add ui elements to Meet and calendar. Even if it&apos;s just creating an entry point and seeing how it feels seeing it over and over all day as I do my work, it has proven to be an extremely helpful tool and skill to have.
           </p>
           <p>
             The inspiration for the tool was the wired youtube videos where experts explain things at varying levels of complexity.

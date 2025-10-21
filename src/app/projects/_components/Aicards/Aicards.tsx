@@ -28,7 +28,7 @@ export default function AiCards() {
     return JSON.stringify(value);
   };
 
-  const formatJSON = (obj: any, indent = 0): React.ReactNode => {
+  const formatJSON = (obj: unknown, indent = 0): React.ReactNode => {
     const spacing = '  '.repeat(indent);
     if (Array.isArray(obj)) {
       return (
@@ -51,7 +51,7 @@ export default function AiCards() {
           {'{\n'}
           {entries.map(([key, value], i) => (
             <span key={key}>
-              {spacing}  <span className={styles.jsonKey}>"{key}"</span>: {
+              {spacing}  <span className={styles.jsonKey}>&apos;{key}&apos;</span>: {
                 typeof value === 'object' && value !== null 
                   ? formatJSON(value, indent + 1)
                   : formatValue(value)

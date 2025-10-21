@@ -20,13 +20,13 @@ export default function Cards() {
 
   const formatValue = (value: any) => {
     if (value === null) return <span className={styles.jsonNull}>null</span>;
-    if (typeof value === 'string') return <span className={styles.jsonString}>"{value}"</span>;
+    if (typeof value === 'string') return <span className={styles.jsonString}>&apos;{value}&apos;</span>;
     if (typeof value === 'number') return <span className={styles.jsonNumber}>{value}</span>;
     if (typeof value === 'boolean') return <span className={styles.jsonBoolean}>{value.toString()}</span>;
     return JSON.stringify(value);
   };
 
-  const formatJSON = (obj: any, indent = 0): React.ReactNode => {
+  const formatJSON = (obj: unknown, indent = 0): React.ReactNode => {
     const spacing = '  '.repeat(indent);
     
     if (Array.isArray(obj)) {
@@ -51,7 +51,7 @@ export default function Cards() {
           {'{\n'}
           {entries.map(([key, value], i) => (
             <span key={key}>
-              {spacing}  <span className={styles.jsonKey}>"{key}"</span>: {
+              {spacing}  <span className={styles.jsonKey}>&apos;{key}&apos;</span>: {
                 typeof value === 'object' && value !== null 
                   ? formatJSON(value, indent + 1)
                   : formatValue(value)

@@ -15,7 +15,7 @@ export default function TileTwo() {
                 Working in AI
             </div>
             <div className={shared.title}>
-            Reflections & anecdotes. I can't share current work.
+            Reflections & anecdotes. I can&apos;t share current work.
             </div>
         </div>
         <div className={shared.thumbnail}>
