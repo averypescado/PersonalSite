@@ -3,7 +3,7 @@
 import shared from "../Tiles.module.css"
 import Link from "next/link"
 import { useState } from "react"
-import individual from "./Tilefour.module.css"
+import individual from "./TileFour.module.css"
 import MiniFlowchart from "../../miniflowchart/MiniFlowchart"
 export default function TileFour() {
     const [hover, setHover] = useState(false)
