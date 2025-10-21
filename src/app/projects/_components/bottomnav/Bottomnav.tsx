@@ -15,31 +15,30 @@ export default function Bottomnav({previous, prevref, next, nextref}: Props) {
             {previous && prevref ?
                     <Link href={prevref} >
                         <div className={styles.prev}>
-                            <div className={styles.swatch}>
+                            <div className={styles.precede}>previously:</div>
+                            <div className={styles.but}>
+                                    <div>
+                                       {previous}
+                                    </div>
+
+
                             </div>
-                                <div>
-                                    <p>previous</p>
-                                    <p>{previous}</p>
-                                </div>
-
-
                         </div>
+
                     </Link>
             :null}
 
             {next && nextref ?
-                <Link href={nextref}>
+                <Link href={nextref} >
                     <div className={styles.next}>
-                        <div className={styles.swatch}>
-                            
-                        </div>
-                        <div>
-                            <p>next</p>
-                            <p>{next}</p>
-                        </div>
+                    <div className={styles.precede}>next:</div>
+                        <div className={styles.but}>
+                            {next}
 
+                        </div>
                     </div>
-                </Link>
+
+            </Link>
             
             :null}
             

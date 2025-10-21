@@ -19,7 +19,7 @@ export default function QuoteContain() {
                     fill
                     src="/headline.png"
                     alt="Picture of the author"
-                    className={styles.meetchrome}
+                    className={styles.picstyle}
                 />
             </div>
 
@@ -28,7 +28,7 @@ export default function QuoteContain() {
                     fill
                     src="/reddit2.png"
                     alt="Picture of the author"
-                    className={styles.meetchrome}
+                    className={styles.picstyle}
                 />
             </div>
 

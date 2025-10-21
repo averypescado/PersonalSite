@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "motion/react"
 import Orb from "./Orb";
 
 type OrbRevealProps = {
@@ -24,5 +25,13 @@ export default function OrbReveal({ threshold = 200 }: OrbRevealProps) {
   }, [threshold]);
 
   if (!show) return null;
-  return <Orb />;
+  return (
+    <AnimatePresence>
+      {show && <Orb use="home" />} {/* Orb handles its own initial/animate/exit */}
+    </AnimatePresence>
+  );
+  
+  
+  
+  
 } 

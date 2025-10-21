@@ -1,0 +1,50 @@
+.tile{
+  background-color: white;
+  border: 1px solid rgb(246, 246, 246);
+     /* diameter of the circle */
+     --d: 1px; 
+   
+     background : radial-gradient(
+       circle at 
+          var(--d) 
+          var(--d), 
+          
+       #d0d0d0 calc(var(--d) - 1px), 
+       #0000 var(--d)
+     ) 
+     0 0 / 12px 12px;
+}
+  .chromeWindow{
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top:-18px;
+    left: -200px;
+    margin-top: 0;
+    display: block;
+  }
+
+  .gradient{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:16px;
+    z-index:12;
+    background: linear-gradient(to right, var(--background, #fff) 0%, rgba(255,255,255,0) 100%);
+    }
+  
+    .gradientright{
+      position: absolute;
+      right:0;
+      top:0;
+      height:100%;
+      width:16px;
+      z-index:12;
+      background: linear-gradient(to left, var(--background, #fff) 0%, rgba(255,255,255,0) 100%);
+      }
+
+
+  
+
+

@@ -1,6 +1,16 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import OrbReveal from "./projects/_components/orb/OrbReveal";
+import Image from "next/image";
+import Marquee from "./projects/_components/marquee/Marquee";
+import AiCards from "./projects/_components/Aicards/Aicards";
+import MiniFlowchart from "./projects/_components/miniflowchart/MiniFlowchart";
+import TileOne from "./projects/_components/tiles/tileone/TileOne";
+import TileTwo from "./projects/_components/tiles/tiletwo/TileTwo";
+import TileThree from "./projects/_components/tiles/tilethree/TileThree";
+import TileFour from "./projects/_components/tiles/tilefour/TileFour";
+import TileFive from "./projects/_components/tiles/tilefive/TileFive";
+import TileSix from "./projects/_components/tiles/tilesix/TileSix";
 
 export default function Home() {
   return (
@@ -29,93 +39,57 @@ export default function Home() {
               <div className={styles.logomark}>Google Meet</div>
             </div>
             <div className={styles.tiles}>
-              <Link href="/projects/tileone" className={`${styles.tileone} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div className={styles.thumbnail}>
-                </div>
-                <div className={styles.description}>
-                  <div className={styles.subtitle}>
-                    Chrome pip
-                  </div>
-                  <div className={styles.title}>
-                    Seamless presenting and multitasking
-                  </div>
-                </div>
-              </Link>
-              <Link href="/projects/tiletwo" className={`${styles.tiletwo} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className={styles.thumbnail}>
+              <div className={`${styles.tileone} ${styles.tile}`}>
+                  <TileOne />
               </div>
-                <div className={styles.description}>
-                  <div className={styles.subtitle}>
-                    Working in AI
-                  </div>
-                  <div className={styles.title}>
-                    Reflections, since I cant share what I&apos;m currently working on.
-                  </div>
-                </div>
-              </Link>
-              <Link href="/projects/tilethree" className={`${styles.tilethree} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                {/* <div className={styles.badge}>
-                  Launched 🚀
-                </div> */}
-                <div className={styles.thumbnail}>
-                </div>
-                <div className={styles.description}>
-                  <div className={styles.subtitle}>
-                    Take notes with Gemini
-                  </div>
-                  <div className={styles.title}>
-                    Helping people who can&apos;t make the meeting
-                  </div>
-                </div>
-              </Link>
-              <Link href="/projects/tilefour" className={`${styles.tilefour} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                {/* <div className={styles.badge}>
-                  Launched 🚀
-                </div> */}
-                <div className={styles.thumbnail}>
+              <div className={`${styles.tiletwo} ${styles.tile}`}>
+              <TileTwo />
+
+
+              </div>
+
+              
+
+  
+
+              <div className={`${styles.tilethree} ${styles.tile}`}>
+                <TileThree />
                 </div>
 
-                <div className={styles.description}>
-                  <div className={styles.subtitle}>
-                    Mini meet platform
-                  </div>
-                  <div className={styles.title}>
-                    Expanding Meets reach and improving developer velocity
-                  </div>
-                </div>
-              </Link>
-              <Link href="/projects/tilefive" className={`${styles.tilefive} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                {/* <div className={styles.badge}>
-                  Workshop 🎤
-                </div> */}
-                <div className={styles.thumbnail}>
-                </div>
+              <div className={`${styles.tilefour} ${styles.tile}`}>
+                <TileFour />
+             
+              </div>
+
+              <div className={`${styles.tilefive} ${styles.tile}`}>
+                <TileFive />
+              </div>
+
+
+              
+              {/* Skinny tile that spans full width within the tiles grid
+              <Link href="/projects/chromeextension" className={`${styles.skinnytile} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className={styles.description}>
                   <div className={styles.subtitle}>
                     Leadership
                   </div>
                   <div className={styles.title}>
-                    Empowering teammates to make more interactive prototypes
+                    Teaching my teammates to make React prototypes
                   </div>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
 
-
 <div className={styles.previously}>
           <div className={styles.flexside}>
-                <img src="/iktwelve.jpg" alt="Google Meet Logo" width={24} height={24} />
+                <img src="/iktwelve.jpg" alt="Informedk12 Logo" width={24} height={24} />
                 <div className={styles.logomark}>Informedk12</div>
           </div>
-          <div className={`${styles.informedtile} ${styles.tile}`}>
-            
-
-
-          </div>
-
-
+    <div className={`${styles.informedtile} ${styles.tile}`}>
+    <TileSix />
+    </div>
 </div>
 
 

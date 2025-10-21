@@ -1,7 +1,6 @@
 .quotes{
     display: flex;
     gap: 1rem;
-    margin-bottom: 3rem;
   }
   
   .quote{
@@ -36,9 +35,6 @@
     font-size: 1.875rem;
     padding-bottom: 32px;
     line-height: 1.3;
-    /* optional: add a tiny left padding so the first letter never collides
-       when the mark size is small or transform is adjusted */
-    /* padding-left: 0.02em; */
   }
   
 /* Opening (hangs into margin) */
@@ -80,3 +76,12 @@
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   
+  @media (max-width: 1000px) {
+    .quotes {
+      display: block;
+    }
+
+    .quote{
+      margin-top: 24px;
+    }
+  }

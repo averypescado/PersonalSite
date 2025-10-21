@@ -1,0 +1,108 @@
+/* flowchart.module.css */
+.holder {
+    /* optional: center the SVG */
+    position: relative;
+    position: relative;
+    width: 100%;
+    max-width: 760px;          /* optional cap */
+    aspect-ratio: 440 / 136;   /* matches your SVG viewBox */
+    display: block; 
+  }
+  
+  .svg {
+    position: absolute;
+    inset: 0;          /* top/right/bottom/left: 0 */
+    width: 100%;
+    height: 100%;
+    display: block;    /* removes inline gap */
+  }
+
+  .logo{
+    position: absolute;
+    left: 17.099%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    height: auto;    
+  }
+
+  .top{
+    position: absolute;
+    left: 63%;
+    top: 17.9%;
+    transform: translate(-50%, -50%);
+    width: 8%;
+    height: auto;    
+  }
+
+  .middle{
+    position: absolute;
+    left: 63%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: auto;    
+  }
+
+  .bottom{
+    position: absolute;
+    left: 63%;
+    top: 82.1%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    height: auto;    
+  }
+
+  .brandlive{
+    position: absolute;
+    left: 65.5%;
+    top: 16.2%;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .chat{
+    position: absolute;
+    left: 67%;
+    top: 48%;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .chrome{
+    position: absolute;
+    left: 67.5%;
+    top: 80.1%;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 750px){
+    .chat, .brandlive, .chrome {
+      max-width:80px;
+    }
+
+  }
+
+  @media (max-width: 580px){
+    .chat, .brandlive, .chrome {
+      max-width:40px;
+    }
+
+  }
+  

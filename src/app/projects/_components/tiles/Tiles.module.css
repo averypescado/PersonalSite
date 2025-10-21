@@ -1,0 +1,40 @@
+.tile{
+    border-radius: 16px;
+    /* background-color: var(--tone); */
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .description{
+    /* background-color: green; */
+    margin-top:24px;
+    margin-bottom: 24px;
+    margin-left: 16px;;
+    color: rgba(26, 26, 26, 1);
+  
+  }
+
+  .subtitle{
+    font-size: .75rem;
+    font-weight: 500;
+  }
+  
+  .title{
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .thumbnail {
+    position: relative;   /* required for fill */
+    width: 100%;
+    flex: 1;              /* Take up available space instead of fixed height */    /* good for rounded corners with images */
+    /* min-height: 200px;  */
+    /* background-color: blue; */
+    padding: 0;  /* Set a minimum height if needed */
+
+  }

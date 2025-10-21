@@ -1,61 +1,118 @@
 .main {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 976px;
-  padding: calc(var(--spacing) * 12) 2rem 2rem 2rem;
+  padding-top: calc(var(--spacing) * 12);
+  box-sizing: border-box;
   margin: 0 auto;
+  padding-bottom: 24px;
+  color:rgb(43, 43, 43);
   /* Remove min-height: 100vh to prevent overflow */
-  min-height: calc(100vh - 2rem);
-}
-
-.main ul { 
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-/* .main li {
-  padding-bottom: 16px;
-} */
-
-.section{
-  font-size:1.875rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top:3rem;
-}
-
-.content p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-
-.hero{
-  width:100%;
-  height:500px;
-  background-color: rgb(243, 243, 243);
-  border-radius: var(--radius);
-  position: relative;
-  overflow: clip;
+  /* min-height: calc(100vh - 2rem); */
 }
 
 .content h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
 }
 
 
+
+.hero{
+  width:100%;
+  height:600px;
+  background-color: rgb(243, 243, 243);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: clip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textcontain{
+  max-width:680px;
+}
 
 .impact {
-  font-size: 1.875rem;
-  margin-top: 3rem;
-  margin-bottom:3rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
+
+.section{
+  font-size:1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.piccontainer{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meetchrome{
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.diagram{
+  width:700px;
+  height: auto;
+  overflow: hidden;
+}
+
+.planvideo{
+  width:680px;
+  height:auto;
+}
+
+
+
+
+
+/* .main ul { 
+  font-size: 1rem;
+  margin-top: 3rem;
+  line-height: 1.;
+} */
+
+/* .main li {
+  padding-bottom: 16px;
+} */
+
+
+
+
+
+
+
+
+.textured{
+  background-image: url("/texture.jpg");
+  object-fit: cover;
+}
+ 
+
+
+
+
+
+
 
 .nav {
   margin-top: 2rem;
@@ -77,18 +134,31 @@
   text-decoration: none;
 } 
 
-
-
-
-
-
-
-
-
-.process{
-  max-width:680px;
-  margin-top: 32px;
+.fadeTop, .fadeBottom {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  pointer-events: none;
+  z-index: 100;
 }
+.fadeTop {
+  top: 0;
+  background: linear-gradient(to bottom, var(--background, #fff) 0%, rgba(255,255,255,0) 100%);
+}
+.fadeBottom {
+  bottom: 0;
+  background: linear-gradient(to top, var(--background, #fff) 0%, rgba(255,255,255,0) 100%);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,12 +193,7 @@
   border: 1px solid rgb(218, 218, 218);
 }
 
-.meetchrome{
-  object-fit: cover;
-  border-radius: var(--radius);
-  margin-top:1rem;
-  margin-bottom: 1rem;
-}
+
 
 .piccontain{
   display: flex;
@@ -158,7 +223,103 @@
   object-position: center;
 }
 
+.vid{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 976px; 
+}
+
+.contain{
+  flex: 1;
+  height:320px;
+  position: relative;
+  border-radius: 32px;
+  overflow:hidden;
+  margin-bottom: 2rem;
+}
+
+.pharrell{
+  width: 300px;
+  height: auto;
+  border-radius: 24px;
+}
+
+.split{
+  flex: 1;
+}
+
+.heropic{
+  width:100%;
+  height: 400px;
+  position: relative;
+  border-radius:24px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-image: url("/texture.jpg");
+  padding-left:24px;
+  padding-right: 24px;
+  padding-top:24px;
+  box-sizing: border-box;
+}
+
+.ik12{
+  width:100%;
+  height: auto;
+}
+
+.k12background{
+  background-image: url("/texture.jpg");
+  padding-left:24px;
+  padding-right: 24px;
+  padding-top: 48px;
+  box-sizing: border-box;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+
+.tnwg{
+  height:100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: top;
+}
+
+.piphero{
+  background-color: #FECACA;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 100vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .hero{
+    height: 400px;
+  }
+
+  .textcontain{
+    width:100%;
+  }
+  .planvideo{
+    width:100%;
+    height:auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+  }
 
 
-
+}
 

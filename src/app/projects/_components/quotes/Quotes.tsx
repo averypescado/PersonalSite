@@ -1,46 +1,46 @@
-import styles from "./quotes.module.css";
+// components/Quotes.tsx
 import Image from "next/image";
+import styles from "./quotes.module.css";
 
-export default function Quotes() {
+type QuoteItem = {
+  text: string;
+  author: string;
+  avatarSrc: string;
+  avatarAlt?: string;
+};
+
+type QuotesProps = {
+  items: QuoteItem[];
+  className?: string;
+};
+
+function QuoteCard({ text, author, avatarSrc, avatarAlt }: QuoteItem) {
   return (
-    <div className={styles.quotes}>
-      <div className={styles.quote}>
-        <div className={styles.general}>
-          My wife just discovered Auto Pip and stopped me from working to tell me
-          how AMAZING it IS. This is so much better than resizing the browser.
-        </div>
-        <div className={styles.attribution}>
-          <div className={styles.head}>
-            <Image 
-              src="/face1.png"
-              fill
-              alt="Demo screenshot"
-              style={{ objectFit: "cover", borderRadius: "var(--radius)" }}
-              />
+    <div className={styles.quote}>
+      <div className={styles.general}>{text}</div>
 
-          </div>
-          <p>Bob Frazier</p>
+      <div className={styles.attribution}>
+        <div className={styles.head}>
+          <Image
+            src={avatarSrc}
+            alt={avatarAlt || `${author} headshot`}
+            fill
+            sizes="40px"
+            style={{ objectFit: "cover", borderRadius: "var(--radius)" }}
+          />
         </div>
+        <p>{author}</p>
       </div>
+    </div>
+  );
+}
 
-      <div className={styles.quote}>
-        <div className={styles.general}>
-          I love picture in picture for Meet because I am able to multitask—
-          doing my work and still being engaged with the meetings I sit in on.
-        </div>
-        <div className={styles.attribution}>
-          <div className={styles.head}>
-              <Image 
-                src="/face2.png"
-                fill
-                alt="Demo screenshot"
-                style={{ objectFit: "cover", borderRadius: "var(--radius)" }}
-                />
-
-            </div>
-          <p>Bob Frazier</p>
-        </div>
-      </div>
+export default function Quotes({ items, className }: QuotesProps) {
+  return (
+    <div className={`${styles.quotes} ${className ?? ""}`}>
+      {items.map((q, i) => (
+        <QuoteCard key={i} {...q} />
+      ))}
     </div>
   );
 }

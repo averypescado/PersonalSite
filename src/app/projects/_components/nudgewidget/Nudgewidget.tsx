@@ -3,10 +3,32 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./Nudgewidget.module.css";
 import Image from "next/image";
+import { motion, useMotionValue, useMotionTemplate } from "motion/react";
+import { inView, animate } from "motion"; // ⬅️ from "motion"
+
+
+
 
 export default function NudgeWidget() {
-  const [isVisible, setIsVisible] = useState(false);
-  const componentRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const componentRef = useRef<HTMLDivElement>(null);
+
+    const clip = useMotionValue(100); // start fully hidden
+    const clipTpl = useMotionTemplate`inset(0px ${clip}% 0px 0px)`;
+    const revealRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!revealRef.current) return;
+        const stop = inView(revealRef.current, () => {
+          animate(clip, 0, { duration: 0.8, ease: "easeOut", delay: 0.1 });
+        }, { amount: 0.3 }); // ~30% visible
+      
+        // return () => stop(); // cleanup observer
+      }, [clip]);
+
+
+
+
 
 
 
@@ -15,7 +37,7 @@ export default function NudgeWidget() {
         <div className={styles.sect}>
             <div className={styles.head}> 
                 <div className={styles.big}>
-                    Doubled the click through rate
+                    2x the click through rate
                 </div>
                 <div className={styles.body}>
                 Twice as many people engage with this promo vs a standard one for the same feature
@@ -49,15 +71,18 @@ export default function NudgeWidget() {
                     Directly drove an over 15% increase in overall feature usage
                 </div>
             </div>
-            <div className={styles.line}>
+            <motion.div
+                ref={revealRef}
+                className={styles.line}
+                style={{ clipPath: clipTpl }}   // ⬅️ animated clip-path
+                >
                 <Image
-                src="/grapp.png"
-                alt="pic"
-                fill
-
+                    src="/grapp.png"
+                    alt="pic"
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
-
-            </div>
+            </motion.div>
                 
         </div>
 

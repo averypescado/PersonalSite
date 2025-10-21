@@ -1,95 +1,153 @@
 .demo{
     width:100%;
-    height:700px;
-    padding: 1rem;
+    /* height:700px; */
+    /* padding: 1rem; */
     overflow: visible;
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    
-  
   }
   .cases{
     position: sticky;
-    left:0px;
-    top:0px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 0;
+    margin: 0 auto 24px;
     display: flex;
-    justify-content: center;
-    gap:24px;
-    padding:8px;
-    background-color: var(--tone);
-    border-radius:300px;
-    width:fit-content;
-   
-    
+    gap: 12px;
+    padding: 6px;
+    background: var(--tone);
+    border-radius: 24px;
+    width: fit-content;
   }
-  
-  .menuItem {
-  list-style: none;
-  height:40px;
-  background-color: beige;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 16px;
-  background-color: rgba(243, 243, 243, 0.462);
-  border-radius: 200px;
-}
 
-.active{ 
-  background-color: rgb(128, 128, 128);
+  .subhead{
+    font-size: 2rem;
+    font-weight:600;
+    margin-bottom: 1rem;;
+  }
+
+  .autopip{
+    width: 800px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .menuItem{
+    position: relative;
+    list-style: none;
+    height: 40px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+    isolation: isolate; /* label above pill */
+
+  }
+  .activePill{
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: rgba(25, 25, 25, 0.9);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) inset, 0 1px 2px rgba(0,0,0,0.04);
+    z-index: 0;
+  }
+
+  .activetext{
+    color: white;
+  }
+  .menuLabel{
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+  }
+  /* .active .menuLabel{ font-weight: 600; } */
+
+/* .active{ 
   color: white;
+  background-color: rgb(32, 28, 28);
   font-weight: 500;
-}
+} */
 
 .active li {
-  font-weight:600
+  font-weight:600,
 }
 
 .content p {
-  text-align: left;
+  text-align: center;
+}
+
+.subhead
+
+.interac{
+  flex: 1;
+  /* background-color: rgb(255, 237, 230); */
+  border-radius: var(--radius);
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat{
+  width:100%;
+  height:520px;
+  position: relative;
+}
+
+.chatimage{
+  width: 800px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid lightgrey;
+}
+
+.Blivevideo{
+  border: 1px solid lightgrey;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pip{
+  width:100%;
+  height:560px;
+  position: relative;
 
 }
 
-  
-  .interac{
-    flex: 1;
-    /* background-color: rgb(255, 237, 230); */
-    border-radius: var(--radius);
+.pipimage{
+  object-fit: contain;
+  object-position: top;
+  border-radius: 8px;
+  border: 1px solid rgb(231, 231, 231);
+}
+
+@media (max-width: 570px) {
+  .cases{
+    flex-direction: column;
   }
 
-  .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  .demo{
+    width: 100%;
+  }
+
+  .interac{
+    width:100%;
+  }
+
+  .interac video {
+    width: 100%;
+    height: auto;
+  }
+
+  .interac img{
+    width: 100%;
   }
 
   .chat{
-    width:100%;
-    height:520px;
-    position: relative;
+    height: auto;
   }
 
-  .chatimage{
-    object-fit: contain;
-    object-position: top;
-    border-radius: 8px;
-    border: 1px solid rgb(231, 231, 231);
-  }
-
-  .pip{
-    width:100%;
-    height:560px;
-    position: relative;
-
-  }
-
-  .pipimage{
-    object-fit: contain;
-    object-position: top;
-    border-radius: 8px;
-    border: 1px solid rgb(231, 231, 231);
-  }
+}

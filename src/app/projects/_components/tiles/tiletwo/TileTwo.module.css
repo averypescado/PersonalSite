@@ -1,0 +1,28 @@
+.tile{
+  background-color: #fce6ca;
+}
+  .chromeWindow{
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top:-18px;
+    left: -200px;
+    margin-top: 0;
+    display: block;
+  }
+
+  .pip {
+    position: absolute;
+    z-index: 100;
+    right: 16px;
+    bottom: 16px;
+  
+    /* Never upscale beyond export width; scale down on small viewports */
+    width: 140px;
+    height: auto;
+  
+    border-radius: 4px;       /* keep if your overlay asset isn’t already rounded */
+    box-shadow: 0 10px 28px rgba(0,0,0,.25);
+  }
+  
+

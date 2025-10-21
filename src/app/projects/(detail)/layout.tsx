@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./layout.module.css";
+import Orb from "../_components/orb/Orb";
 
 export default function ProjectDetailLayout({
   children,
@@ -8,11 +9,10 @@ export default function ProjectDetailLayout({
 }) {
   return (
     <>
-     <nav className={styles.nav}>
-        <Link href="/" className={styles.navLink}>
-          ← Home
-        </Link>
-      </nav>
+     <div className={styles.fadeTop} />
+     <div className={styles.fadeBottom} />
+     <Orb use="project" />
+
     <main className={styles.main}>
 
       <div className={styles.content}>{children}</div>
