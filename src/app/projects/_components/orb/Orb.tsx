@@ -46,13 +46,16 @@ export default function Orb({use}: OrbProps) {
     >        
     
     <motion.div
-      layout
-      transition={{ layout: { duration: 0.2, ease: "easeOut" } }}
-      className={`${styles.orb} ${selected=="none" ? '' : styles.bigger}`}
-    >
+      className={styles.orb}
+      initial={{ height: 52 }}  // ← Add this
+      animate={{
+        height: selected == "none" ? 52 : 200
+      }}
+      transition={{ duration: 0.3, ease: "easeOut" }}  // ← Add transition here too
+    > 
 
           {use == "home" &&
-           <motion.div className={styles.topflex}>
+           <div className={styles.topflex}>
               <div className={styles.name}>{selected== "none" ? "Avery Fisher" : "Please email me at"} </div>
 
 
@@ -95,7 +98,7 @@ export default function Orb({use}: OrbProps) {
 
 
           
-         </motion.div>         
+         </div>         
           }
 
           {use == "project" &&
@@ -124,22 +127,15 @@ export default function Orb({use}: OrbProps) {
 
          
 
-<AnimatePresence>
-  {selected == "contact" && (
-    <motion.div 
+    <div
       className={styles.email}
-      initial={{ opacity: 0, height: 0 }}
-      animate={{ opacity: 1, height: "auto" }}
-      exit={{ opacity: 0, height: 0 }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <div>averydwfisher@gmail.com</div>
       <div className={styles.copybutton}>
         <Copy color="black" size={24} />
       </div>
-    </motion.div>
-  )}
-</AnimatePresence>
+    </div>
+
 
 
 
