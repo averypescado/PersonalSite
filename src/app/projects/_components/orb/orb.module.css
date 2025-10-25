@@ -86,8 +86,6 @@
     padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
-    /* border: 1px solid rgb(238, 238, 238);
-    border-radius: 24px; */
     font-size:.75rem;
     background-color: white;
     box-sizing: border-box;
@@ -96,16 +94,16 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    min-height: 30px;  /* ← Add this to lock the height */
 }
 
 .buttoncontainer{
     width: 64px;
+    height: 30px;  /* ← Add this to match min-height above */
     border: 1px solid rgb(238, 238, 238);
     border-radius: 24px;
     box-sizing: border-box;
-    overflow: hidden;;
-
-    /* background-color: red; */
+    overflow: hidden;
 }
 
 .copybutton{

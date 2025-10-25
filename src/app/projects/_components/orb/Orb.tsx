@@ -56,7 +56,7 @@ export default function Orb({use}: OrbProps) {
 
           {use == "home" &&
            <div className={styles.topflex}>
-              <div className={styles.name}>{selected== "none" ? "Avery Fisher" : "Please email me at"} </div>
+              <div className={styles.name}>{selected== "none" ? "Avery Fisher" : "Avery Fisher"} </div>
 
 
             <div className={styles.buttoncontainer}>
