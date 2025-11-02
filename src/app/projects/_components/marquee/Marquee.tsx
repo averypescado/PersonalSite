@@ -88,6 +88,41 @@ export default function Marquee() {
                 title: "Twin Rivers",
                 image: "/TwinRivers.png",
             },
+            {
+                id: 18,
+                title: "LAUSD",
+                image: "/LAUSD.png",
+            },
+            {
+                id: 19,
+                title: "SJUSD",
+                image: "/SJUSD.png",
+            },
+            {
+                id: 20,
+                title: "Santa Clara",
+                image: "/SantaClara.png",
+            },
+            {
+                id: 21,
+                title: "Greece",
+                image: "/Greece.png",
+            },
+            {
+                id: 22,
+                title: "Eagle",
+                image: "/Eagle.png",
+            },
+            {
+                id: 23,
+                title: "Northville",
+                image: "/Northville.png",
+            },
+            {
+                id: 24,
+                title: "Lakeland",
+                image: "/Lakeland.png",
+            },
       ];
 
 
@@ -186,7 +221,7 @@ export default function Marquee() {
                     aria-hidden="true" 
                     className={styles.marquee_content}
                 >
-                    {schools.slice(12,17).map((school) => 
+                    {schools.slice(12,18).map((school) => 
                         <li 
                             className={styles.district}
                             key={school.id}
@@ -206,7 +241,7 @@ export default function Marquee() {
                     aria-hidden="true" 
                     className={styles.marquee_content}
                 >
-                    {schools.slice(12,17).map((school) => 
+                    {schools.slice(12,18).map((school) => 
                         <li 
                             className={styles.district}
                             key={school.id}
@@ -224,31 +259,50 @@ export default function Marquee() {
                 </ul>
                 
             </div>
-            <div className={styles.marquee}>
+            <div className={styles.marquee_reverse}>
                 <ul 
                     aria-hidden="true" 
                     className={styles.marquee_content_reverse}
                 >
-                        <li className={styles.district}>1</li>
-                        <li className={styles.district}>2</li>
-                        <li className={styles.district}>3</li>
-                        <li className={styles.district}>4</li>
-                        <li className={styles.district}>5</li>
-                        <li className={styles.district}>6</li>
+                    {schools.slice(18,24).map((school) => 
+                        <li 
+                            className={styles.district}
+                            key={school.id}
+                        >
+                            <Image 
+                                src={school.image}
+                                alt={school.title}
+                                fill
+                                className={styles.filled}
+                            />
+                            {school.title}
+                        </li>
+                    
+                    )}
                 </ul>
                 <ul 
                     aria-hidden="true" 
                     className={styles.marquee_content_reverse}
                 >
-                        <li className={styles.district}>1</li>
-                        <li className={styles.district}>2</li>
-                        <li className={styles.district}>3</li>
-                        <li className={styles.district}>4</li>
-                        <li className={styles.district}>5</li>
-                        <li className={styles.district}>6</li>
+                    {schools.slice(18,24).map((school) => 
+                        <li 
+                            className={styles.district}
+                            key={school.id}
+                        >
+                            <Image 
+                                src={school.image}
+                                alt={school.title}
+                                fill
+                                className={styles.filled}
+                            />
+                            {school.title}
+                        </li>
+                    
+                    )}
                 </ul>
                 
             </div>
+         
         </div>
     )
 

@@ -13,6 +13,7 @@
     flex: 1;
     /* ensure the hanging mark can render outside the box edge */
     overflow: visible;
+    height:380px;
   }
   
   .attribution{
@@ -21,6 +22,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    position: absolute;
+    bottom:24px
 
 
   }

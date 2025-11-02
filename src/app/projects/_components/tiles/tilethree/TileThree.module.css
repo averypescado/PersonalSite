@@ -1,5 +1,10 @@
 .tile{
   background-color: #2d2d2d;
+  transition: background 0.2s ease-out;
+  }
+
+  .tile:hover {
+    background-color:hsl(0, 0%, 21%);
   }
 
   .description{

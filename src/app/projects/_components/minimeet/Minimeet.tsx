@@ -65,7 +65,7 @@ export default function Minimeet() {
         <div className={styles.content}>
           <div className={styles.subhead}>Meet in a single click</div>
           <p>
-            <b>Huddles in Google Chat supports quick, audio first conversations.</b> The launch of this feature led to a 20% increase in the number of meetings people were having. 
+            <b>Huddles in Google Chat supports quick, audio first conversations.</b> This closed a key competitive gap with Slack and other messaging apps.
           </p>
           <div className={styles.chat}>
             <Image

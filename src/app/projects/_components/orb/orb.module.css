@@ -72,11 +72,17 @@
 }
 
 .email{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 24px;
+    width: 100%;
+}
+
+.contact{
+    font-size: 1.5rem;
+    font-weight: 600;
     width: 100%;
 }
 
@@ -94,16 +100,27 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    min-height: 30px;  /* ← Add this to lock the height */
+    min-height: 30px;
+    border-radius: 24px;
+    transition: background ease-out .2s;
+}
+
+.buttons:hover{
+    background-color: rgba(242, 242, 242, 0.839);
+}
+
+.aboutbutton{
+    width:80px;
+
 }
 
 .buttoncontainer{
     width: 64px;
     height: 30px;  /* ← Add this to match min-height above */
-    border: 1px solid rgb(238, 238, 238);
     border-radius: 24px;
     box-sizing: border-box;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .copybutton{
@@ -113,6 +130,20 @@
     border: 1px solid rgb(237, 237, 237);
     padding:16px;
     border-radius: 16px;
+    height:56px;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.groupbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
 }
 
 

@@ -280,6 +280,23 @@
   align-items: flex-start;
 }
 
+.minimeetbackground {
+  background-color: white;
+  border: 1px solid rgb(246, 246, 246);
+     /* diameter of the circle */
+     --d: 1px; 
+   
+     background : radial-gradient(
+       circle at 
+          var(--d) 
+          var(--d), 
+          
+       #d0d0d0 calc(var(--d) - 1px), 
+       #0000 var(--d)
+     ) 
+     0 0 / 12px 12px;
+}
+
 .tnwg{
   height:100%;
   height: 100%;

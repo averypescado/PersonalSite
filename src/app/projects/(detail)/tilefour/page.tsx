@@ -10,7 +10,7 @@ export default function TileFourProject() {
     <div className={styles.main}>
       <p>Mini meet platform</p>
       <h1>Expanding Meets reach & improving velocity</h1>
-      <div className={styles.hero}>
+      <div className={`${styles.hero} ${styles.minimeetbackground}`}>
       <Flowchart />
 
       </div>
@@ -38,7 +38,7 @@ export default function TileFourProject() {
         </p>
       </div> */}
       </div>
-      <Bottomnav previous= "AI Notes" prevref= "/projects/tilethree" next='Prototyping workshop' nextref="/projects/tilefive"  />
+      <Bottomnav previous= "AI Notes" prevref= "/projects/tilethree" next='AI Chrome extension' nextref="/projects/tilefive"  />
     </>
   );
 } 

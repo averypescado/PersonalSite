@@ -1,7 +1,11 @@
 .tile{
   background-image: url('/gradient2@3x.png');
   background-size: cover;
+  transition: background 0.2s ease-out;
+}
 
+.tile:hover{
+  filter: brightness(1.03); /* lighten by 10% */
 }
 .chromeWindow{
   width: 800px;

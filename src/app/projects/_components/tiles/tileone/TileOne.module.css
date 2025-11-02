@@ -1,6 +1,11 @@
 .tile{
     background-color: #ffd6d6;
+    transition: background 0.2s ease-out;
   }
+.tile:hover {
+  background-color:hsl(0, 100%, 93%);
+}
+
   .chromeWindow{
     width: 800px;
     height: auto;

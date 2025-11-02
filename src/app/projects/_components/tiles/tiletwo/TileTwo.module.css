@@ -1,5 +1,10 @@
 .tile{
   background-color: #fce6ca;
+  transition: background 0.2s ease-out;
+}
+
+.tile:hover {
+  background-color:hsl(34, 89%, 92%);
 }
   .chromeWindow{
     width: 800px;

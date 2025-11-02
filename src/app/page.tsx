@@ -26,10 +26,10 @@ export default function Home() {
         </div>
 
         <div className={styles.blurb}>
-        I love understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at <span className={styles.bubble}>Google Meet</span>, and features that are critical toschool district administrators work at <span className={styles.bubble}>Informedk12</span>.
+        I enjoy understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at <span className={styles.bubble}>Google Meet</span>, and features that are critical to school district administrators work at <span className={styles.bubble}>Informedk12</span>.
         <br></br>
         <br></br>
-        Currently I am focused on how AI can make meetings better, before, during, and after.
+        Currently, I am focused on how AI can make meetings better, before, during, and after the meeting itself.
         </div>
 
         <div className={styles.currently}>
