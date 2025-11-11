@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         <div className={styles.blurb}>
-        I enjoy understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at <span className={styles.bubble}>Google Meet</span>, and features that are critical to school district administrators work at <span className={styles.bubble}>Informedk12</span>.
+        I enjoy understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at Google Meet, and features that are critical to school district administrators work at Informedk12.
         <br></br>
         <br></br>
         Currently, I am focused on how AI can make meetings better, before, during, and after the meeting itself.

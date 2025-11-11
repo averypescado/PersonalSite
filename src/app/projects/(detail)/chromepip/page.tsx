@@ -17,7 +17,7 @@ export default function TileOneProject() {
       </div>
       <div className={styles.textcontain}>
         <div className={styles.impact}>
-          Automatic picture in picture launched in July 2024. It has millions of daily users, and won an award for being one of the most impactful projects across Google Cloud.
+          Automatic picture in picture launched in July 2024. It has millions of daily users, and won an internal award for being one of the most impactful projects across Google Cloud.
         </div>
       </div>
 
@@ -41,7 +41,7 @@ export default function TileOneProject() {
       <div className={styles.textcontain}>
         <div className={styles.section}>Identifying room for improvement</div>
         <p>
-          The first version of Meet picture in picture had extremely low usage, but it was loved by those that did use it. Partnering with UXR, I identified a few key areas for improvement:
+          The first version of Meet picture in picture had low usage, but it was loved by those that did use it. Partnering with UXR, I identified a few key areas for improvement:
         </p>
       </div>
        <ChromeFeedback />

@@ -24,7 +24,7 @@ export default function TileOneProject() {
         <div className={styles.section}>Process</div>
         <p>
           <b>Identifying room for improvement</b><br></br>
-          The first version of Meet picture in picture had extremely low usage, but it was loved by those that did use it. Partnering with UXR, I identified a few key areas for improvement:
+          The first version of Meet picture in picture had low usage, but it was loved by those that did use it. Partnering with UXR, I identified a few key areas for improvement:
           </p>
       </div>
       <ChromeFeedback />
@@ -36,7 +36,7 @@ export default function TileOneProject() {
 
         <p>
           <b>Identifying key use cases</b><br></br>
-I partnered with our amazing UXR to get feedback on what the key uses cases people were using pip for. This informed which features we should toggle on and prioritize in the UI.</p>
+I partnered with our amazing UXR to understand the key uses cases people were using pip for. This informed which features we should toggle on and prioritize in the UI.</p>
       </div>
 
       <UseCases />

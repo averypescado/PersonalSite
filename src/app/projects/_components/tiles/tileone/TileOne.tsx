@@ -14,7 +14,7 @@ export default function TileOne() {
     return(
     <div className={`${shared.tile} ${individual.tile}`}>
       <Link 
-        href="/projects/tileone" 
+        href="/projects/chromepip" 
         onPointerEnter={() => setHover(true)}
         onPointerLeave={() => setHover(false)}
         className={`${shared.tileone} ${shared.tile}`} 

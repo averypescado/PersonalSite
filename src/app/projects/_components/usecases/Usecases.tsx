@@ -24,7 +24,7 @@ export default function UseCases() {
                 />
                 </div>
 
-                <div className={styles.more}>Collaborating <CirclePlus color="grey" size={18} /></div>
+                <div className={styles.more}>Collaborating </div>
             </div>
 
             <div className={styles.usecase}>
@@ -38,7 +38,7 @@ export default function UseCases() {
                 />
                 </div>
 
-                <div className={styles.more}>Multitasking <CirclePlus color="grey" size={18} /></div>
+                <div className={styles.more}>Multitasking </div>
             </div>
 
             <div className={styles.usecase}>
@@ -52,7 +52,7 @@ export default function UseCases() {
                 />
                 </div>
 
-                <div className={styles.more}>Presenting <CirclePlus color="grey" size={18} /></div>
+                <div className={styles.more}>Presenting </div>
             </div>
 
         </div>

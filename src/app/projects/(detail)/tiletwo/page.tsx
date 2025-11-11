@@ -121,7 +121,7 @@ export default function TileTwoProject() {
 
 
       </div>
-      <Bottomnav previous= "Picture in picture" prevref= "/projects/tileone" next='AI Notes' nextref="/projects/tilethree"  />
+      <Bottomnav previous= "Chrome pip" prevref= "/projects/chromepip" next='AI Notes' nextref="/projects/tilethree"  />
 
  
     </>
