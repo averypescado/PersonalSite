@@ -99,7 +99,7 @@ export default function Minimeet() {
       
                 preload="metadata"
                 className={styles.autopip}>
-              <source src="/Autopip.mp4" type="video/mp4" />
+              <source src="/AutoPip.mp4" type="video/mp4" />
 
           </video>
  

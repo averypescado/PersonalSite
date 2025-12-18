@@ -13,7 +13,7 @@ export default function TileOneProject() {
       <p>Chrome pip</p>
       <h1>Seamless presenting and multitasking: Launching Meets Picture in Picture</h1>
       <div className={`${styles.hero} ${styles.piphero}`}> 
-      <Video src="/Autopip.mp4" thumbnail="/bgtile1.png" />
+      <Video src="/AutoPip.mp4" thumbnail="/bgtile1.png" />
       </div>
       <div className={styles.textcontain}>
         <div className={styles.impact}>
