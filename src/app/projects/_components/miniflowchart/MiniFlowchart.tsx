@@ -76,21 +76,21 @@ export default function MiniFlowchart({ hovered = false }: Props) {
             src="/mlogo.png"
             width={264}
             height={264}
-            alt="meet logo"
+            alt="Meet logo"
             className={styles.logo}
       />
       <Image 
             src="/brandlive.png"
             width={572}
             height={494}
-            alt="meet logo"
+            alt="Brandlive logo"
             className={styles.top}
       />
       <Image 
             src="/gchat.png"
             width={552}
             height={568}
-            alt="meet logo"
+            alt="Google Chat logo"
             className={styles.middle}
       />
 
@@ -98,7 +98,7 @@ export default function MiniFlowchart({ hovered = false }: Props) {
             src="/chrome.png"
             width={768}
             height={768}
-            alt="meet logo"
+            alt="Google Chrome logo"
             className={styles.bottom}
       />   
       

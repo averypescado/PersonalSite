@@ -68,7 +68,7 @@ export default function TileOneProject() {
               width={500}
               height={600}
               src="/chromeet.png"
-              alt="Picture of the author"
+              alt="Etching of a person writing with chrome over their eyes and a cherrub with Meet on their eyes"
               className={styles.meetchrome}
             />
 

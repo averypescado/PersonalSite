@@ -273,10 +273,10 @@ const getAnimForIndex = (i: number) => {
           onMouseLeave={handleSliderMouseUp}
           style={{ cursor: isSliding ? 'grabbing' : 'grab' }}
         >
-          <Image src="/oldbike@3x.png" alt="old bike" fill draggable={false} />
+          <Image src="/oldbike@3x.png" alt="Black and white etching of a man on a bike" fill draggable={false} />
           <Image
             src="/newbike@3x.png"
-            alt="new bike"
+            alt="Color photo of a new bike"
             fill
             draggable={false}
             style={{ clipPath: `inset(0px 0px 0px ${sliderPosition}px)` }}

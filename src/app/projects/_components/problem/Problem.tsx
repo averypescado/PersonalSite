@@ -8,7 +8,7 @@ export default function Problem() {
             <div className={styles.pic}>
                 <Image 
                 src="/fomo.jpg"
-                alt="masks"
+                alt="People in office space wearing happy maskys"
                 fill
                 className={styles.cov}
                 />
@@ -34,7 +34,7 @@ export default function Problem() {
             <div className={styles.pic}>
                 <Image 
                 src="/paperwork.jpg"
-                alt="masks"
+                alt="Man looking at a large person made of paper"
                 fill
                 className={styles.cov}
                 />
@@ -59,7 +59,7 @@ export default function Problem() {
             <div className={styles.pic}>
                 <Image 
                 src="/burnout.webp"
-                alt="masks"
+                alt="Man melting flat over the back of his desk chair"
                 fill
                 className={styles.cov}
                 />

@@ -70,7 +70,7 @@ export default function Minimeet() {
           <div className={styles.chat}>
             <Image
               src="/startinghuddleingooglechat.gif"
-              alt="start huddle"
+              alt="Gif of Google Chat and somebody starting a huddle"
               width={1278}
               height={797}
               className={styles.chatimage}

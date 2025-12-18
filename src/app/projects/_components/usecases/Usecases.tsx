@@ -19,7 +19,7 @@ export default function UseCases() {
                 width={200}
                 height={400}
                 src="/collab.jpg"
-                alt="Picture of the author"
+                alt="A ballet dancer being held up by instructor"
                 className={styles.multi}
                 />
                 </div>
@@ -33,7 +33,7 @@ export default function UseCases() {
                 width={200}
                 height={400}
                 src="/juggle.webp"
-                alt="Picture of the author"
+                alt="Man with 8 hands smoking cigarette, reading, and doing other teasks"
                 className={styles.multi}
                 />
                 </div>
@@ -47,7 +47,7 @@ export default function UseCases() {
                 width={200}
                 height={400}
                 src="/view.webp"
-                alt="Picture of the author"
+                alt="Man in hat looking out at a beautiful lake and park"
                 className={styles.multi}
                 />
                 </div>
@@ -62,46 +62,4 @@ export default function UseCases() {
 
 }
 
-{/* <div className={styles.usecases}>
-<div className={styles.usecase}>
-    <div className={styles.descpic}>
-    <Image 
-      width={200}
-      height={200}
-      src="/collab.jpg"
-      alt="Picture of the author"
-      className={styles.multi}
-    />
-    </div>
-
-    <p>Collaborating</p>
-  </div>
-  <div className={styles.usecase}>
-    <div className={styles.descpic}>
-    <Image 
-      width={200}
-      height={200}
-      src="/juggle.webp"
-      alt="Picture of the author"
-      className={styles.multi}
-    />
-    </div>
-
-    <p>Multitasking</p>
-  </div>
-  <div className={styles.usecase}>
-    <div className={styles.descpic}>
-    <Image 
-      width={200}
-      height={200}
-      src="/view.webp"
-      alt="Picture of the author"
-      className={styles.multi}
-    />
-    </div>
-
-    <p>Presenting</p>
-  </div>
-
-</div> */}
 

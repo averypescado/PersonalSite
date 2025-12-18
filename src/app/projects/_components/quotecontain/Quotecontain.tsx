@@ -18,7 +18,7 @@ export default function QuoteContain() {
                 <Image 
                     fill
                     src="/headline.png"
-                    alt="Picture of the author"
+                    alt="Headline from Verge saying Google Meets new AI will be able to go to meetings for you"
                     className={styles.picstyle}
                 />
             </div>
@@ -27,7 +27,7 @@ export default function QuoteContain() {
                 <Image 
                     fill
                     src="/reddit2.png"
-                    alt="Picture of the author"
+                    alt="Picture reddit comment saying that 'I live in Japan, where poitnless meetings are a national pastime. They will never embrace it, but this would be a godsend!"
                     className={styles.picstyle}
                 />
             </div>

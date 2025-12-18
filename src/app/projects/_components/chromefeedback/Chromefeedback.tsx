@@ -99,7 +99,7 @@ export default function Chromefeedback() {
       <div className={styles.demo}>
         <Image
           src={images[Math.min(selected, 3) as 0 | 1 | 2 | 3]}  /* guard when selected==5 */
-          alt="Demo screenshot"
+          alt="Screenshot of a chrome browser with picture in picture 1.0 circled "
           fill
           style={{ objectFit: "cover", borderRadius: "var(--radius)" }}
         />

@@ -32,9 +32,9 @@ export default function TileThree() {
         <div className={shared.thumbnail}>
                 <Image
                     src="/video@3x.png"
-                    alt=""
+                    alt="Top rioght corner of Google Meet UI"
                     width={1536}
-                    height={1368}      // keep aspect; won't actually render this tall
+                    height={1368} 
                     className={individual.tnwg}
                     aria-hidden="true"
                     quality={90}
@@ -42,10 +42,9 @@ export default function TileThree() {
 
                 <Image
                     src="/badges@3x.png"
-                    alt=""
+                    alt="Icon for starting AI notes"
                     width={210}
-                    height={102}
-                      // keep aspect; won't actually render this tall
+                    height={102}              
                     className={individual.badges}
                     aria-hidden="true"
                     quality={90}
@@ -53,10 +52,9 @@ export default function TileThree() {
 
                 <MotionImage
                     src="/callout.png"
-                    alt=""
+                    alt="Callout getting people to turn on notes"
                     width={480}
                     height={378}
-                      // keep aspect; won't actually render this tall
                     className={individual.callout}
                     aria-hidden="true"
                     quality={90}

@@ -78,7 +78,7 @@ export default function NudgeWidget() {
                 >
                 <Image
                     src="/grapp.png"
-                    alt="pic"
+                    alt="Line graph showing 15% increase"
                     fill
                     style={{ objectFit: "cover" }}
                 />

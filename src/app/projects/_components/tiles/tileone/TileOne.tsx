@@ -32,7 +32,7 @@ export default function TileOne() {
         <div className={shared.thumbnail}>
           <Image
             src="/CWindow.png"
-            alt="test"
+            alt="Chrome browser window"
             width={3840}
             height={2661}
             className={individual.chromeWindow}
@@ -41,7 +41,7 @@ export default function TileOne() {
           />
           <MotionImage
             src="/pip.png"
-            alt=""
+            alt="Small Meet in picture in picture window"
             width={351}
             height={657}
             className={individual.pip}

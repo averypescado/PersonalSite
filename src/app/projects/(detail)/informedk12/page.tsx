@@ -11,7 +11,7 @@ export default function Informedk12Project() {
       <h1>Helping school districts create & manage digital forms & workflows</h1>
       <div className={`${styles.hero} ${styles.k12background}`}>
         <Image
-              alt="pharrell in large hat"
+              alt="Picture of a ui interface showing a system for managinf digital forms and workflows"
               width={3300}
               height={2361}
               src="/IK12Nav@3x.png"
@@ -47,7 +47,7 @@ export default function Informedk12Project() {
         </div>
         <div className={styles.heropic}>
           <Image
-              alt="pharrell in large hat"
+              alt="Picture of a ui interface showing a system for managinf digital forms and workflows"
               width={3300}
               height={2361}
               src="/IK12Nav@3x.png"

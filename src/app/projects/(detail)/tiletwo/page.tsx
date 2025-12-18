@@ -29,7 +29,7 @@ export default function TileTwoProject() {
           width={500}
           height={300}
           src="/problems.gif"
-          alt="Picture of the author"
+          alt="Gif of Office character saying he has problems"
           className={styles.meetchrome}
         />
       </div>
@@ -57,7 +57,7 @@ export default function TileTwoProject() {
             width={1947}
             height={843}
             src="/protodiag.png"
-            alt="Picture of the author"
+            alt="Dialog of a person at a computer. There are two lines, one coming from Google workspace, and teh other from Genini. They convene in a UI circle then go into the computer"
             className={styles.diagram}
         />
       </div>
@@ -86,7 +86,7 @@ export default function TileTwoProject() {
             width={650}
             height={450}
             src="/mvp.png"
-            alt="Picture of the author"
+            alt="Infographic of a sad face of somebody trying to make a car, but not being able to drive anything during incremental steps. Happier faces in a bottom row where they have a skateboard, then a scooter, then a bike, a motoerbike, and a car."
             className={styles.meetchrome}
           />
       </div>

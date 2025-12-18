@@ -122,21 +122,21 @@ export default function Flowchart() {
             src="/mlogo.png"
             width={264}
             height={264}
-            alt="meet logo"
+            alt="Google Meet logo"
             className={styles.logo}
       />
       <Image 
             src="/brandlive.png"
             width={572}
             height={494}
-            alt="meet logo"
+            alt="Brandlive logo"
             className={styles.top}
       />
       <Image 
             src="/gchat.png"
             width={552}
             height={568}
-            alt="meet logo"
+            alt="Google chat logo"
             className={styles.middle}
       />
 
@@ -144,7 +144,7 @@ export default function Flowchart() {
             src="/chrome.png"
             width={768}
             height={768}
-            alt="meet logo"
+            alt="Google chrome logo"
             className={styles.bottom}
       />   
 
