@@ -88,7 +88,7 @@ export default function Minimeet() {
         <div className={styles.content}>
           <div className={styles.subhead}>Multitask seamlessly</div>
           <p>
-            <b>Chrome picture in picture enables seamless presenting and multitasking from Meet</b> It has millions of daily active users. I go into more details here.
+            <b>Chrome picture in picture enables seamless presenting and multitasking from Meet.</b> It has millions of daily active users. I go into more details here.
 
           </p>
           <video

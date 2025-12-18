@@ -92,7 +92,7 @@ export default function Informedk12Project() {
       </div>
 
       <p>
-        How do we create a navigation system which allows people to quickly get to where they need, and reinforece a simple mental model for the elements of a form?
+        How do we create a navigation system which allows people to quickly get to where they need, and reinforce a simple mental model for the elements of a form?
       </p>
     </div>
 

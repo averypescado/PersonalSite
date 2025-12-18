@@ -65,19 +65,6 @@ export default function Home() {
                 <TileFive />
               </div>
 
-
-              
-              {/* Skinny tile that spans full width within the tiles grid
-              <Link href="/projects/chromeextension" className={`${styles.skinnytile} ${styles.tile}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div className={styles.description}>
-                  <div className={styles.subtitle}>
-                    Leadership
-                  </div>
-                  <div className={styles.title}>
-                    Teaching my teammates to make React prototypes
-                  </div>
-                </div>
-              </Link> */}
             </div>
           </div>
         </div>

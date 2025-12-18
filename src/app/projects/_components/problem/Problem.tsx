@@ -15,7 +15,7 @@ export default function Problem() {
 
             </div>
             <div className={styles.head}>
-                People waste time in irrelavant meetings due to FOMO
+                People waste time in irrelevant meetings due to FOMO
             </div>
 
             {/* <div className={styles.body}>

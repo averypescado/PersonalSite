@@ -56,7 +56,7 @@ export default function TileThreeProject() {
           The problem
         </div>
         <p>
-          The problem was, there was a big difference between what was announced and what we were going to launch anytime soon. Almost a year after the announcement, we still hadn&apos;t launched anything. The team was getting stressed and ancy, I was tasked with creating a plan for how we could launch and continuously improve.
+          The problem was, there was a big difference between what was announced and what we were going to launch anytime soon. Almost a year after the announcement, we still hadn&apos;t launched anything. The team was getting stressed and antsy, I was tasked with creating a plan for how we could launch and continuously improve.
         </p>
         <div className={styles.section}>
           Grounding in the core problem
