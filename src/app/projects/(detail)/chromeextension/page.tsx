@@ -14,7 +14,7 @@ export default function TileOneProject() {
       <div className={styles.hero}> 
         <Image
           src="/bgtile1.png"
-          alt="A chrome"
+          alt="A chrome window"
           fill
         />
       </div>
