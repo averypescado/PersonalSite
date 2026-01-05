@@ -67,9 +67,9 @@ export default function Orb({use}: OrbProps) {
       className={styles.orb}
       initial={{ height: 52 }}  // ← Add this
       animate={{
-        height: selected === "none" ? 52 
+        height: selected === "none" ? 52
                 : selected === "contact" ? 124
-                : selected === "moreinfo" ? 300
+                : selected === "moreinfo" ? "auto"
                 :52
       }}
       transition={{ duration: 0.3, ease: "easeOut" }}  // ← Add transition here too
@@ -237,7 +237,7 @@ export default function Orb({use}: OrbProps) {
         <div>
           My first job was as a researcher, and I studied mechanical engineering and design in college. These experiences impact my approach to design. 
           <br></br><br></br>
-          In my free time I enjoy playing soccer, sewing, playing chess, and djaying.
+          In my free time I enjoy playing soccer, sewing, playing chess, and djing.
           <br></br><br></br>
 
 
