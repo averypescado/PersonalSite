@@ -11,8 +11,8 @@ export default function TileFour() {
     return(
 
             <div className={`${shared.tile} ${individual.tile}`}>
-            <Link 
-            href="/projects/tilefour"
+            <Link
+            href="/projects/minimeet"
             onPointerEnter={() => setHover(true)}
             onPointerLeave={() => setHover(false)}
             style={{ textDecoration: 'none', color: 'inherit' }}

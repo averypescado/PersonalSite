@@ -55,9 +55,9 @@ Since the initial workshop, Ive added more chapters to the resource, including h
         </p> */}
 
       </div>
-      <Bottomnav   
-        previous= "Minimeet platform" prevref= "/projects/tilefour"  
-        next= "School district form management" nextref= "/projects/informedk12"  
+      <Bottomnav
+        previous= "Minimeet platform" prevref= "/projects/minimeet"
+        next= "School district form management" nextref= "/projects/informedk12"
       />
     </>
   );

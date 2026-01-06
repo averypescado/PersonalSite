@@ -124,7 +124,7 @@ export default function Informedk12Project() {
     </div>
 
     
-    <Bottomnav previous="AI Chrome extension" prevref="/projects/tilefive" next="Chrome pip" nextref="/projects/chromepip" />
+    <Bottomnav previous="AI Chrome extension" prevref="/projects/extension" next="Chrome pip" nextref="/projects/chromepip" />
     </>
   );
 }

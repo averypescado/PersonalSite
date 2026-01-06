@@ -97,7 +97,7 @@ None of the components we were using were designed to be very responsive. Since 
 
 
 
-      <Bottomnav next='Working in AI' nextref="/projects/tiletwo" />
+      <Bottomnav next='Working in AI' nextref="/projects/reflections" />
 
     </div>
     </>

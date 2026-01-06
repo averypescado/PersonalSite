@@ -12,8 +12,8 @@ export default function TileFive() {
 
     return(
     <div className={`${shared.tile} ${individual.tile}`}>
-        <Link 
-            href="/projects/tilefive"
+        <Link
+            href="/projects/extension"
             onPointerEnter={() => setHover(true)}
             onPointerLeave={() => setHover(false)}
             style={{ textDecoration: 'none', color: 'inherit' }}

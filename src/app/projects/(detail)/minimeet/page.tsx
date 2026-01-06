@@ -38,7 +38,7 @@ export default function TileFourProject() {
         </p>
       </div> */}
       </div>
-      <Bottomnav previous= "AI Notes" prevref= "/projects/tilethree" next='AI Chrome extension' nextref="/projects/tilefive"  />
+      <Bottomnav previous= "AI Notes" prevref= "/projects/ainotes" next='AI Chrome extension' nextref="/projects/extension"  />
     </>
   );
 } 

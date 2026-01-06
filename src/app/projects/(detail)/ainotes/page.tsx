@@ -100,7 +100,7 @@ export default function TileThreeProject() {
 
         </div>
     </div>
-    <Bottomnav previous= "Working in AI" prevref= "/projects/tiletwo" next='Mini Meet Platform' nextref="/projects/tilefour"  />
+    <Bottomnav previous= "Working in AI" prevref= "/projects/reflections" next='Mini Meet Platform' nextref="/projects/minimeet"  />
     </>
   );
 } 

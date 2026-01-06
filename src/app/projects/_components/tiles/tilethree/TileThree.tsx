@@ -13,8 +13,8 @@ export default function TileThree() {
   const [hover, setHover] = useState(false)
     return(
     <div className={`${shared.tile} ${individual.tile}`}>
-      <Link 
-        href="/projects/tilethree"
+      <Link
+        href="/projects/ainotes"
         onPointerEnter={() => setHover(true)}
         onPointerLeave={() => setHover(false)}
         style={{ textDecoration: 'none', color: 'inherit' }}

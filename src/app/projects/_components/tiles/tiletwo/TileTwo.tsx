@@ -5,9 +5,9 @@ import Link from "next/link"
 export default function TileTwo() {
     return(
     <div className={`${shared.tile} ${individual.tile}`}>
-    <Link 
-        href="/projects/tiletwo" 
-        className={`${shared.tiletwo} ${shared.tile}`} 
+    <Link
+        href="/projects/reflections"
+        className={`${shared.tiletwo} ${shared.tile}`}
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
         <div className={shared.description}>
