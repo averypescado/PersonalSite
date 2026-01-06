@@ -29,7 +29,7 @@ export default function Home() {
         I enjoy understanding technical details and prototyping in code. I&apos;ve shipped large, cross product features used by millions at Google Meet, and features that are critical to school district administrators work at Informedk12.
         <br></br>
         <br></br>
-        Currently, I am focused on how AI can make meetings better, before, during, and after the meeting itself.
+        Currently, I am focused on how AI can make meetings better: before, during, and after.
         </div>
 
         <div className={styles.currently}>
